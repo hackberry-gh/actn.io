@@ -1,0 +1,9 @@
+[submodule "actn-api"]
+      path = lib/actn-api
+      url = git://github.com/hackberry-gh/actn-api.git      
+[submodule "actn-db"]
+      path = lib/actn-db
+      url = git://github.com/hackberry-gh/actn-db.git
+[submodule "actn-jobs"]
+      path = lib/actn-jobs
+      url = git://github.com/hackberry-gh/actn-jobs.git      
