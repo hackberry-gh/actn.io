@@ -7,3 +7,13 @@
 [submodule "actn-jobs"]
       path = lib/jobs
       url = git://github.com/hackberry-gh/actn-jobs.git      
+      
+[submodule "actn-core"]
+      path = api/core
+      url = git://github.com/hackberry-gh/actn-core.git
+[submodule "actn-cors"]
+      path = api/cors
+      url = git://github.com/hackberry-gh/actn-cors.git
+[submodule "actn-ui"]
+      path = api/ui
+      url = git://github.com/hackberry-gh/actn-ui.git
