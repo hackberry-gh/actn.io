@@ -1,7 +1,14 @@
 # Actn.io
 
 Highly experimental backend as a service, under heavy development. 
-Sorry, no documentation at the moment
+Sorry, no documentation at the moment but you can play with demo app
+
+Core: http://demo.core.actn.io
+- user: demo@actn.io
+- pass: password 
+
+Cors: http://demo.api.actn.io
+Ui: http://api.actn.io
 
 ## Apis
 
