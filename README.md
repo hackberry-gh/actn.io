@@ -3,11 +3,13 @@
 Highly experimental backend as a service, under heavy development. 
 Sorry, no documentation at the moment but you can play with demo app
 
-Core: http://demo.core.actn.io
+Core: http://demo.core.actn.io  
+
 - user: demo@actn.io
 - pass: password 
 
-Cors: http://demo.api.actn.io
+Cors: http://demo.api.actn.io  
+
 Ui: http://api.actn.io
 
 ## Apis
@@ -30,7 +32,8 @@ Background jobs firing on create, update and destroy events on models.
 Uses Postgresql Listen/Notify API
 Currently there is only one hook, webhook which makes http requests with giving options
 
-- UI::Template
+##### Template  
+
 Frontend Models of UI API
 
 #### Tools
@@ -47,7 +50,8 @@ Abstract backend api with cross domain support
 - Background Jobs through Hooks
 
 ### UI
-Multilingual content management api
+Template management api  
+
 - Templates
   - Views
   - Layouts
