@@ -2,145 +2,424 @@
 <html>
   <head>
     <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>Actn.io by hackberry-gh</title>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">  
+    <link rel="stylesheet" type="text/css" href="stylesheets/application.css" media="screen">
+<!--    <script src="http://demo.api.actn.io/connect?apikey=9bdcd3fcc92acdcce21d947d5611f741"></script>-->
+    <script src="http://demo.api.actn.io/connect?apikey=9bdcd3fcc92acdcce21d947d5611f741"></script>
+    
+    <title>Actn.io</title>
   </head>
 
-  <body>
-    <div id="container">
-      <div class="inner">
+  <body class="p2" style="max-width:560px;margin:0 auto">
 
-        <header>
-          <h1>Actn.io</h1>
-          <h2>Backend as a service</h2>
-        </header>
-
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/hackberry-gh/actn.io/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/hackberry-gh/actn.io/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/hackberry-gh/actn.io" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
-
-        <hr>
-
-        <section id="main_content">
-          <h1>
-<a name="actnio" class="anchor" href="#actnio"><span class="octicon octicon-link"></span></a>Actn.io</h1>
-
-<p>Highly experimental backend as a service, under heavy development. 
-Sorry, no documentation at the moment but you can play with demo app</p>
-
-<p>Core: <a href="http://demo.core.actn.io">http://demo.core.actn.io</a></p>
-
-<ul>
-<li>user: <a href="mailto:demo@actn.io">demo@actn.io</a>
-</li>
-<li>pass: password </li>
-</ul>
-
-<p>Cors: <a href="http://demo.api.actn.io">http://demo.api.actn.io</a>
-Ui: <a href="http://api.actn.io">http://api.actn.io</a></p>
-
-<h2>
-<a name="apis" class="anchor" href="#apis"><span class="octicon octicon-link"></span></a>Apis</h2>
-
-<h3>
-<a name="core" class="anchor" href="#core"><span class="octicon octicon-link"></span></a>Core</h3>
-
-<p>Core API provides overall administration on actn.io</p>
-
-<h4>
-<a name="managable-modules" class="anchor" href="#managable-modules"><span class="octicon octicon-link"></span></a>Managable Modules</h4>
-
-<h5>
-<a name="client" class="anchor" href="#client"><span class="octicon octicon-link"></span></a>Client</h5>
-
-<p>Rest and Cors Client to consume Cors API</p>
-
-<h5>
-<a name="model" class="anchor" href="#model"><span class="octicon octicon-link"></span></a>Model</h5>
-
-<p>Provides dynamic/abstract database modelling to use in Cors API.
-Uses json schemas for design and validations, uses PL/V8
-Provides indexing and callbacks aka hooks</p>
-
-<h6>
-<a name="hook" class="anchor" href="#hook"><span class="octicon octicon-link"></span></a>Hook</h6>
-
-<p>Background jobs firing on create, update and destroy events on models. 
-Uses Postgresql Listen/Notify API
-Currently there is only one hook, webhook which makes http requests with giving options</p>
-
-<ul>
-<li>UI::Template
-Frontend Models of UI API</li>
-</ul>
-
-<h4>
-<a name="tools" class="anchor" href="#tools"><span class="octicon octicon-link"></span></a>Tools</h4>
-
-<ul>
-<li><p>Live 
-See and Query data in real time</p></li>
-<li><p>Search
-Query your data in ease. Uses HTTP Stream method so you can get millions of rows without any problem and rapidly filter results even with tens of millions. 
-Data visualisation are on the way via D3</p></li>
-</ul>
-
-<h3>
-<a name="cors" class="anchor" href="#cors"><span class="octicon octicon-link"></span></a>Cors</h3>
-
-<p>Abstract backend api with cross domain support</p>
-
-<ul>
-<li>Database I/O</li>
-<li>Background Jobs through Hooks</li>
-</ul>
-
-<h3>
-<a name="ui" class="anchor" href="#ui"><span class="octicon octicon-link"></span></a>UI</h3>
-
-<p>Multilingual content management api</p>
-
-<ul>
-<li>Templates
-
-<ul>
-<li>Views</li>
-<li>Layouts</li>
-<li>Css<br>
-</li>
-<li>Javascript</li>
-<li>Data Binding</li>
-</ul>
-</li>
-</ul>
-
-<h3>
-<a name="deployment" class="anchor" href="#deployment"><span class="octicon octicon-link"></span></a>Deployment</h3>
-
-<p>Designed to run on CoreOS clusters, see platform directory for development environment.</p>
-
-<h3>
-<a name="thanks" class="anchor" href="#thanks"><span class="octicon octicon-link"></span></a>Thanks</h3>
-
-<p>Many thanks to all open source community. Actn.io uses excellent technology from top to bottom all open source.</p>
-        </section>
-
-        <footer>
-          Actn.io is maintained by <a href="https://github.com/hackberry-gh">hackberry-gh</a><br>
-          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
-
-        
-      </div>
+    <div class="logo bg-yellow darken-4 inline-block p1">A.io</div>
+    
+    <h1>Hello! This is Actn.io</h1>
+    <h2><a href="https://github.com/hackberry-gh/actn.io">Open Source</a> Backend as a Service</h2>
+    
+    <p>Read and write data, query your data without limits in real time. Set hooks as backend jobs, create front end modules with HTML5</p>
+    
+    <h3>Demo, an Example App</h3>
+     
+    <p class="p1 rounded border">Demo app is already up and running on <a href="http://demo.actn.io" target="_blank">http://demo.actn.io</a> and can be managed at <a href="http://demo.core.actn.io" target="_blank">http://demo.core.actn.io</a>. Signin with <strong>demo@actn.io</strong> and <strong>password</strong></p>
+    
+    <p>Let's say you need to collect signatures for your online petition. Very basic scenerio can be using a web form to collect and save data into database. To achive that simple goal with Actn.io you need;</p>
+    
+    <ul>
+      <li class="mb1">1. <code class="button-small">Client</code> to communicate with <a href="https://github.com/hackberry-gh/actn-cors" target="_blank">Cors API</a></li>
+      <li class="mb1">2. <code class="button-small">Model</code> to validate and capture data properly</li>
+      <li class="mb1">3. <code class="button-small">Template</code> to render petition form</li>
+    </ul>
+    
+    <p class="bg-yellow p1 rounded red mb4">If you already have a website or page 1. and 2. steps are enough to go</p>
+    
+    <h4>1. Client</h4>
+    <p>You can <a href="http://demo.core.actn.io/clients/new" target="_blank">create</a> many clients as you like through Core API interface. Each client is dedicated to only one domain.
+      
+    <br/><br/>
+      
+    Client has two properties;</p>
+    <ul class="mb2">
+      <li><code class="button-small">domain</code> the domain which sends cross domain request</li>
+      <li><code class="button-small">acl</code> an array of access control list patterns for certain http verbs and paths. Eg: <code class="button-small">*, GET:/signatures, POST:/users, ...</code></li>      
+    </ul>
+    
+    <p class="p2 bg-lighter-gray"><img src="/images/client.png" class="border rounded fit"/><em>Client for demo.actn.io domain</em></p>
+    
+    <p>As you can see there is an <code class="button-small">apikey</code> property belongs to Client. Use it to include javascript client into your pages.</p>
+    <pre class="bg-dark-gray white p2">&lt;script src="http://demo.api.actn.io/connect?apikey=1b5f986d2136c22e775c519630b638dc"&gt;&lt;/script&gt;</pre>
+    <p class="bg-yellow p1 rounded red mb3">You can make server side http requests as well, but for that you need to authorize your requests by adding apikey and secret into request headers. This credentials reveal just after creating a new client and you need to save them since they aren't available after that event.</p>
+    
+    <p class="mb4">That's it, from that point you can call the actn.io cors api from your javascript code. We will learn how to make http later, but now let's create a Model to play with.</p>
+    
+    <h4>2. Model</h4>
+    <p>Like Client, no limit on models too. Have a look on <a href="http://demo.core.actn.io/models/00154774-4496-46b0-9b6f-bcd7ca4e8572/edit" target="_blank">Signature Model</a> which is already created for <a href="http://demo.actn.io" target="_blank">Demo App.</a>
+    <br/><br/>
+    Model properties are;</p>
+    <ul>
+      <li><code class="button-small">name</code> name of the model, cannot be change after creation and must be unique</li>
+      <li><code class="button-small">schema</code> <a href="http://json-schema.org/" target="_blank">JSON schema</a> for structure and validations</li>         <li><code class="button-small">indexes</code> array of <a href="https://github.com/hackberry-gh/actn-db/blob/master/db/schemas/model.json#L17" target="_blank">indexes</a></li>   
+      <li><code class="button-small">hooks</code> dictionary of <a href="https://github.com/hackberry-gh/actn-db/blob/master/db/schemas/model.json#L51" target="_blank">hooks</a></li>         
+    </ul>  
+    </p>
+    
+    <p class="p2 bg-lighter-gray"><img src="/images/model.png" class="border block rounded fit"/><em>Signature model</em></p>
+    
+    <p>Lovely! We have a client and a model. So, here are some runnable javascript code examples;</p>
+  
+    <h5>Create a signature</h5>
+    <textarea id="script1" class="full-width bg-dark-gray white p2" style="height:454px">
+var rnd = Math.random() * 10000;
+actn.post({
+  path: '/signatures',
+  data: {
+    first_name: 'fname' + rnd,
+    last_name: 'lname' + rnd,
+    email: 'email' + rnd + '@actn.io'
+  },
+  success: function(data){
+    alert(JSON.stringify(data,null,2));
+  },
+  error: function(xhr){
+    alert(xhr.responseText);
+  }
+})</textarea>
+    <button class="jsRun bg-blue white mb3" data-script="script1">Run</button>
+  
+    <h5>Get all signatures</h5>
+    <textarea id="script2" class="full-width bg-dark-gray white p2" style="height:286px">actn.get({
+    path: '/signatures',
+    success: function(data){
+      alert(data.length);
+    },
+    error: function(xhr){
+      alert(xhr.responseText);
+    }
+  })</textarea>
+    <button class="jsRun bg-blue white mb3" data-script="script2">Run</button>
+  
+    <h5>Delete a signature</h5>
+    <textarea id="script3" class="full-width bg-dark-gray white p2" style="height:286px">actn.delete({
+    path: '/signatures?uuid=...loading...',
+    success: function(data){
+      alert(JSON.stringify(data,null,2));
+    },
+    error: function(xhr){
+      alert(xhr.responseText);
+    }
+  })</textarea>
+    <button class="jsRun bg-blue white mb3" data-script="script3">Run</button>
+  
+    <p class="mb4">Enough play? OK! Good, let's create a webpage with a form to provide more human interface for our petition.</p>
+  
+    <h4>3. Template</h4>
+  <p>Template allows you to create http accessible files like html pages, stylesheets or javacripts. It uses tilt gem internally but supports only erb as a templating language at the moment. You can manage templates <a href="http://demo.core.actn.io/templates" target="_blank">here</a>
+    
+    <br/><br/>
+    
+    Template properties are;</p>
+    <ul>
+      <li><code class="button-small">filename</code> filename of the template, must be end with .erb, eg: <code class="button-small">index.html.erb, style.css.erb</code></li>
+      <li><code class="button-small">layout</code> layout filename to render template within, "true" if the template itself is layout</li>
+      <li><code class="button-small">data_bind</code> data binding options to fetch data before rendering template, the data will be available as <strong>data</strong> local variable</li>            
+    </ul>  
+    </p>
+  
+    <div class="tabs mb4">
+    <div class="clearfix border-bottom">
+      <a href="#!" class="left button button-nav-tab is-active" rel="source">Source</a>
+      <a href="#!" class="left button button-nav-tab" rel="result">Result</a>
     </div>
+    <textarea class="tab full-width bg-dark-gray white p2" style="height:300px">&lt;h1&gt;Hello&lt;/h1&gt;
+
+&lt;form&gt;
+&lt;p&gt;&lt;input type="email" id="email" placeholder="email" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;select id="country"&gt;
+&lt;option value="AF"&gt;Afghanistan&lt;/option&gt;
+&lt;option value="AL"&gt;Albania&lt;/option&gt;
+&lt;option value="DZ"&gt;Algeria&lt;/option&gt;
+&lt;option value="AS"&gt;American Samoa&lt;/option&gt;
+&lt;option value="AD"&gt;Andorra&lt;/option&gt;
+&lt;option value="AO"&gt;Angola&lt;/option&gt;
+&lt;option value="AI"&gt;Anguilla&lt;/option&gt;
+&lt;option value="AQ"&gt;Antarctica&lt;/option&gt;
+&lt;option value="AG"&gt;Antigua and Barbuda&lt;/option&gt;
+&lt;option value="AR"&gt;Argentina&lt;/option&gt;
+&lt;option value="AM"&gt;Armenia&lt;/option&gt;
+&lt;option value="AW"&gt;Aruba&lt;/option&gt;
+&lt;option value="AU"&gt;Australia&lt;/option&gt;
+&lt;option value="AT"&gt;Austria&lt;/option&gt;
+&lt;option value="AZ"&gt;Azerbaijan&lt;/option&gt;
+&lt;option value="BS"&gt;Bahamas&lt;/option&gt;
+&lt;option value="BH"&gt;Bahrain&lt;/option&gt;
+&lt;option value="BD"&gt;Bangladesh&lt;/option&gt;
+&lt;option value="BB"&gt;Barbados&lt;/option&gt;
+&lt;option value="BY"&gt;Belarus&lt;/option&gt;
+&lt;option value="BE"&gt;Belgium&lt;/option&gt;
+&lt;option value="BZ"&gt;Belize&lt;/option&gt;
+&lt;option value="BJ"&gt;Benin&lt;/option&gt;
+&lt;option value="BM"&gt;Bermuda&lt;/option&gt;
+&lt;option value="BT"&gt;Bhutan&lt;/option&gt;
+&lt;option value="BO"&gt;Bolivia&lt;/option&gt;
+&lt;option value="BA"&gt;Bosnia and Herzegovina&lt;/option&gt;
+&lt;option value="BW"&gt;Botswana&lt;/option&gt;
+&lt;option value="BV"&gt;Bouvet Island&lt;/option&gt;
+&lt;option value="BR"&gt;Brazil&lt;/option&gt;
+&lt;option value="IO"&gt;British Indian Ocean Territory&lt;/option&gt;
+&lt;option value="VG"&gt;British Virgin Islands&lt;/option&gt;
+&lt;option value="BN"&gt;Brunei&lt;/option&gt;
+&lt;option value="BG"&gt;Bulgaria&lt;/option&gt;
+&lt;option value="BF"&gt;Burkina Faso&lt;/option&gt;
+&lt;option value="BI"&gt;Burundi&lt;/option&gt;
+&lt;option value="KH"&gt;Cambodia&lt;/option&gt;
+&lt;option value="CM"&gt;Cameroon&lt;/option&gt;
+&lt;option value="CA"&gt;Canada&lt;/option&gt;
+&lt;option value="CV"&gt;Cape Verde&lt;/option&gt;
+&lt;option value="KY"&gt;Cayman Islands&lt;/option&gt;
+&lt;option value="CF"&gt;Central African Republic&lt;/option&gt;
+&lt;option value="TD"&gt;Chad&lt;/option&gt;
+&lt;option value="CL"&gt;Chile&lt;/option&gt;
+&lt;option value="CN"&gt;China&lt;/option&gt;
+&lt;option value="CX"&gt;Christmas Island&lt;/option&gt;
+&lt;option value="CC"&gt;Cocos [Keeling] Islands&lt;/option&gt;
+&lt;option value="CO"&gt;Colombia&lt;/option&gt;
+&lt;option value="KM"&gt;Comoros&lt;/option&gt;
+&lt;option value="CG"&gt;Congo [Republic]&lt;/option&gt;
+&lt;option value="CK"&gt;Cook Islands&lt;/option&gt;
+&lt;option value="CR"&gt;Costa Rica&lt;/option&gt;
+&lt;option value="HR"&gt;Croatia&lt;/option&gt;
+&lt;option value="CU"&gt;Cuba&lt;/option&gt;
+&lt;option value="CY"&gt;Cyprus&lt;/option&gt;
+&lt;option value="CZ"&gt;Czech Republic&lt;/option&gt;
+&lt;option value="DK"&gt;Denmark&lt;/option&gt;
+&lt;option value="DJ"&gt;Djibouti&lt;/option&gt;
+&lt;option value="DM"&gt;Dominica&lt;/option&gt;
+&lt;option value="DO"&gt;Dominican Republic&lt;/option&gt;
+&lt;option value="EC"&gt;Ecuador&lt;/option&gt;
+&lt;option value="EG"&gt;Egypt&lt;/option&gt;
+&lt;option value="SV"&gt;El Salvador&lt;/option&gt;
+&lt;option value="GQ"&gt;Equatorial Guinea&lt;/option&gt;
+&lt;option value="EE"&gt;Estonia&lt;/option&gt;
+&lt;option value="ET"&gt;Ethiopia&lt;/option&gt;
+&lt;option value="FK"&gt;Falkland Islands [Islas Malvinas]&lt;/option&gt;
+&lt;option value="FO"&gt;Faroe Islands&lt;/option&gt;
+&lt;option value="FJ"&gt;Fiji&lt;/option&gt;
+&lt;option value="FI"&gt;Finland&lt;/option&gt;
+&lt;option value="FR"&gt;France&lt;/option&gt;
+&lt;option value="GF"&gt;French Guiana&lt;/option&gt;
+&lt;option value="PF"&gt;French Polynesia&lt;/option&gt;
+&lt;option value="TF"&gt;French Southern Territories&lt;/option&gt;
+&lt;option value="GA"&gt;Gabon&lt;/option&gt;
+&lt;option value="GM"&gt;Gambia&lt;/option&gt;
+&lt;option value="GE"&gt;Georgia&lt;/option&gt;
+&lt;option value="DE"&gt;Germany&lt;/option&gt;
+&lt;option value="GH"&gt;Ghana&lt;/option&gt;
+&lt;option value="GI"&gt;Gibraltar&lt;/option&gt;
+&lt;option value="GR"&gt;Greece&lt;/option&gt;
+&lt;option value="GL"&gt;Greenland&lt;/option&gt;
+&lt;option value="GD"&gt;Grenada&lt;/option&gt;
+&lt;option value="GP"&gt;Guadeloupe&lt;/option&gt;
+&lt;option value="GU"&gt;Guam&lt;/option&gt;
+&lt;option value="GT"&gt;Guatemala&lt;/option&gt;
+&lt;option value="GN"&gt;Guinea&lt;/option&gt;
+&lt;option value="GW"&gt;Guinea-Bissau&lt;/option&gt;
+&lt;option value="GY"&gt;Guyana&lt;/option&gt;
+&lt;option value="HT"&gt;Haiti&lt;/option&gt;
+&lt;option value="HM"&gt;Heard Island and McDonald Islands&lt;/option&gt;
+&lt;option value="HN"&gt;Honduras&lt;/option&gt;
+&lt;option value="HK"&gt;Hong Kong&lt;/option&gt;
+&lt;option value="HU"&gt;Hungary&lt;/option&gt;
+&lt;option value="IS"&gt;Iceland&lt;/option&gt;
+&lt;option value="IN"&gt;India&lt;/option&gt;
+&lt;option value="ID"&gt;Indonesia&lt;/option&gt;
+&lt;option value="IR"&gt;Iran&lt;/option&gt;
+&lt;option value="IQ"&gt;Iraq&lt;/option&gt;
+&lt;option value="IE"&gt;Ireland&lt;/option&gt;
+&lt;option value="IL"&gt;Israel&lt;/option&gt;
+&lt;option value="IT"&gt;Italy&lt;/option&gt;
+&lt;option value="CI"&gt;Ivory Coast&lt;/option&gt;
+&lt;option value="JM"&gt;Jamaica&lt;/option&gt;
+&lt;option value="JP"&gt;Japan&lt;/option&gt;
+&lt;option value="JO"&gt;Jordan&lt;/option&gt;
+&lt;option value="KZ"&gt;Kazakhstan&lt;/option&gt;
+&lt;option value="KE"&gt;Kenya&lt;/option&gt;
+&lt;option value="KI"&gt;Kiribati&lt;/option&gt;
+&lt;option value="KW"&gt;Kuwait&lt;/option&gt;
+&lt;option value="KG"&gt;Kyrgyzstan&lt;/option&gt;
+&lt;option value="LA"&gt;Laos&lt;/option&gt;
+&lt;option value="LV"&gt;Latvia&lt;/option&gt;
+&lt;option value="LB"&gt;Lebanon&lt;/option&gt;
+&lt;option value="LS"&gt;Lesotho&lt;/option&gt;
+&lt;option value="LR"&gt;Liberia&lt;/option&gt;
+&lt;option value="LY"&gt;Libya&lt;/option&gt;
+&lt;option value="LI"&gt;Liechtenstein&lt;/option&gt;
+&lt;option value="LT"&gt;Lithuania&lt;/option&gt;
+&lt;option value="LU"&gt;Luxembourg&lt;/option&gt;
+&lt;option value="MO"&gt;Macau&lt;/option&gt;
+&lt;option value="MK"&gt;Macedonia [FYROM]&lt;/option&gt;
+&lt;option value="MG"&gt;Madagascar&lt;/option&gt;
+&lt;option value="MW"&gt;Malawi&lt;/option&gt;
+&lt;option value="MY"&gt;Malaysia&lt;/option&gt;
+&lt;option value="MV"&gt;Maldives&lt;/option&gt;
+&lt;option value="ML"&gt;Mali&lt;/option&gt;
+&lt;option value="MT"&gt;Malta&lt;/option&gt;
+&lt;option value="MH"&gt;Marshall Islands&lt;/option&gt;
+&lt;option value="MQ"&gt;Martinique&lt;/option&gt;
+&lt;option value="MR"&gt;Mauritania&lt;/option&gt;
+&lt;option value="MU"&gt;Mauritius&lt;/option&gt;
+&lt;option value="MX"&gt;Mexico&lt;/option&gt;
+&lt;option value="FM"&gt;Micronesia&lt;/option&gt;
+&lt;option value="MD"&gt;Moldova&lt;/option&gt;
+&lt;option value="MC"&gt;Monaco&lt;/option&gt;
+&lt;option value="MN"&gt;Mongolia&lt;/option&gt;
+&lt;option value="ME"&gt;Montenegro&lt;/option&gt;
+&lt;option value="MS"&gt;Montserrat&lt;/option&gt;
+&lt;option value="MA"&gt;Morocco&lt;/option&gt;
+&lt;option value="MZ"&gt;Mozambique&lt;/option&gt;
+&lt;option value="MM"&gt;Myanmar [Burma]&lt;/option&gt;
+&lt;option value="NA"&gt;Namibia&lt;/option&gt;
+&lt;option value="NR"&gt;Nauru&lt;/option&gt;
+&lt;option value="NP"&gt;Nepal&lt;/option&gt;
+&lt;option value="NL"&gt;Netherlands&lt;/option&gt;
+&lt;option value="AN"&gt;Netherlands Antilles&lt;/option&gt;
+&lt;option value="NC"&gt;New Caledonia&lt;/option&gt;
+&lt;option value="NZ"&gt;New Zealand&lt;/option&gt;
+&lt;option value="NI"&gt;Nicaragua&lt;/option&gt;
+&lt;option value="NE"&gt;Niger&lt;/option&gt;
+&lt;option value="NG"&gt;Nigeria&lt;/option&gt;
+&lt;option value="NU"&gt;Niue&lt;/option&gt;
+&lt;option value="NF"&gt;Norfolk Island&lt;/option&gt;
+&lt;option value="KP"&gt;North Korea&lt;/option&gt;
+&lt;option value="MP"&gt;Northern Mariana Islands&lt;/option&gt;
+&lt;option value="NO"&gt;Norway&lt;/option&gt;
+&lt;option value="OM"&gt;Oman&lt;/option&gt;
+&lt;option value="PK"&gt;Pakistan&lt;/option&gt;
+&lt;option value="PW"&gt;Palau&lt;/option&gt;
+&lt;option value="PS"&gt;Palestinian Territories&lt;/option&gt;
+&lt;option value="PA"&gt;Panama&lt;/option&gt;
+&lt;option value="PG"&gt;Papua New Guinea&lt;/option&gt;
+&lt;option value="PY"&gt;Paraguay&lt;/option&gt;
+&lt;option value="PE"&gt;Peru&lt;/option&gt;
+&lt;option value="PH"&gt;Philippines&lt;/option&gt;
+&lt;option value="PN"&gt;Pitcairn Islands&lt;/option&gt;
+&lt;option value="PL"&gt;Poland&lt;/option&gt;
+&lt;option value="PT"&gt;Portugal&lt;/option&gt;
+&lt;option value="PR"&gt;Puerto Rico&lt;/option&gt;
+&lt;option value="QA"&gt;Qatar&lt;/option&gt;
+&lt;option value="RE"&gt;Reunion&lt;/option&gt;
+&lt;option value="RO"&gt;Romania&lt;/option&gt;
+&lt;option value="RU"&gt;Russia&lt;/option&gt;
+&lt;option value="RW"&gt;Rwanda&lt;/option&gt;
+&lt;option value="SH"&gt;Saint Helena&lt;/option&gt;
+&lt;option value="KN"&gt;Saint Kitts and Nevis&lt;/option&gt;
+&lt;option value="LC"&gt;Saint Lucia&lt;/option&gt;
+&lt;option value="PM"&gt;Saint Pierre and Miquelon&lt;/option&gt;
+&lt;option value="VC"&gt;Saint Vincent and the Grenadines&lt;/option&gt;
+&lt;option value="WS"&gt;Samoa&lt;/option&gt;
+&lt;option value="SM"&gt;San Marino&lt;/option&gt;
+&lt;option value="ST"&gt;Sao Tome and Principe&lt;/option&gt;
+&lt;option value="SA"&gt;Saudi Arabia&lt;/option&gt;
+&lt;option value="SN"&gt;Senegal&lt;/option&gt;
+&lt;option value="RS"&gt;Serbia&lt;/option&gt;
+&lt;option value="SC"&gt;Seychelles&lt;/option&gt;
+&lt;option value="SL"&gt;Sierra Leone&lt;/option&gt;
+&lt;option value="SG"&gt;Singapore&lt;/option&gt;
+&lt;option value="SK"&gt;Slovakia&lt;/option&gt;
+&lt;option value="SI"&gt;Slovenia&lt;/option&gt;
+&lt;option value="SB"&gt;Solomon Islands&lt;/option&gt;
+&lt;option value="SO"&gt;Somalia&lt;/option&gt;
+&lt;option value="ZA"&gt;South Africa&lt;/option&gt;
+&lt;option value="KR"&gt;South Korea&lt;/option&gt;
+&lt;option value="ES"&gt;Spain&lt;/option&gt;
+&lt;option value="LK"&gt;Sri Lanka&lt;/option&gt;
+&lt;option value="SD"&gt;Sudan&lt;/option&gt;
+&lt;option value="SR"&gt;Suriname&lt;/option&gt;
+&lt;option value="SJ"&gt;Svalbard and Jan Mayen&lt;/option&gt;
+&lt;option value="SZ"&gt;Swaziland&lt;/option&gt;
+&lt;option value="SE"&gt;Sweden&lt;/option&gt;
+&lt;option value="CH"&gt;Switzerland&lt;/option&gt;
+&lt;option value="SY"&gt;Syria&lt;/option&gt;
+&lt;option value="TW"&gt;Taiwan&lt;/option&gt;
+&lt;option value="TJ"&gt;Tajikistan&lt;/option&gt;
+&lt;option value="TZ"&gt;Tanzania&lt;/option&gt;
+&lt;option value="TH"&gt;Thailand&lt;/option&gt;
+&lt;option value="TG"&gt;Togo&lt;/option&gt;
+&lt;option value="TK"&gt;Tokelau&lt;/option&gt;
+&lt;option value="TO"&gt;Tonga&lt;/option&gt;
+&lt;option value="TT"&gt;Trinidad and Tobago&lt;/option&gt;
+&lt;option value="TN"&gt;Tunisia&lt;/option&gt;
+&lt;option value="TR"&gt;Turkey&lt;/option&gt;
+&lt;option value="TM"&gt;Turkmenistan&lt;/option&gt;
+&lt;option value="TC"&gt;Turks and Caicos Islands&lt;/option&gt;
+&lt;option value="TV"&gt;Tuvalu&lt;/option&gt;
+&lt;option value="UM"&gt;U.S. Outlying Islands&lt;/option&gt;
+&lt;option value="VI"&gt;U.S. Virgin Islands&lt;/option&gt;
+&lt;option value="UG"&gt;Uganda&lt;/option&gt;
+&lt;option value="UA"&gt;Ukraine&lt;/option&gt;
+&lt;option value="AE"&gt;United Arab Emirates&lt;/option&gt;
+&lt;option value="GB"&gt;United Kingdom&lt;/option&gt;
+&lt;option value="US"&gt;United States&lt;/option&gt;
+&lt;option value="UY"&gt;Uruguay&lt;/option&gt;
+&lt;option value="UZ"&gt;Uzbekistan&lt;/option&gt;
+&lt;option value="VU"&gt;Vanuatu&lt;/option&gt;
+&lt;option value="VA"&gt;Vatican City&lt;/option&gt;
+&lt;option value="VE"&gt;Venezuela&lt;/option&gt;
+&lt;option value="VN"&gt;Vietnam&lt;/option&gt;
+&lt;option value="WF"&gt;Wallis and Futuna&lt;/option&gt;
+&lt;option value="EH"&gt;Western Sahara&lt;/option&gt;
+&lt;option value="YE"&gt;Yemen&lt;/option&gt;
+&lt;option value="ZM"&gt;Zambia&lt;/option&gt;
+&lt;option value="ZW"&gt;Zimbabwe&lt;/option&gt;
+&lt;/select&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+&lt;pre&gt;&lt;/pre&gt;</textarea>  
+    <iframe id="result" class="tab full-width hide" style="border:none;height:188px" src="http://demo.actn.io/"></iframe>
+      <em>source and rendered result of Template <a href="http://demo.core.actn.io/templates/63acce42-bbd5-49cf-90b0-72265309635d/edit" target="_blank">index.html.erb</a>, which renders with layout <a href="http://demo.core.actn.io/templates/3f058a06-4980-41b0-b48a-81d060c47950/edit" target="_blank">layout.html.erb</a></em>
+    </div>
+  
+    <h4>Live and Search</h4>
+    <p>Ok, we are capturing signatures very well, but you need to use that data right? Actn.io provides two interface for accessing data, Live and Search</p>
+
+    <h5>Live</h5>
+    <p>All insert, update and delete actions sends websocket message to Live interface. And you can see all that records on this screen. Thanks to <a href="https://github.com/jiren/StreamTable.js/" target="_blank">stream_table.js</a> you can search and sort all the results too. To see it in action  run below script and goto <a href="http://demo.core.actn.io/live" target="_blank">Live</a> section</p>
+    <textarea id="script4" class="full-width bg-dark-gray white p2" style="height:706px">// post 10 signature every 100 milisecond      
+window.startTimer = function(){
+  window.clearTimeout(window.sTimer);    
+  window.sTimer = window.setTimeout(function() {      
+    for(var i=0; i < 10; i++) {      
+      var rnd = Math.random() * 10000;
+      actn.post({
+        path: '/signatures',
+        data: {
+          first_name: 'fname' + rnd,
+          last_name: 'lname' + rnd,
+          email: 'email' + rnd + '@actn.io'
+        },
+        success: function(data){
+          window.startTimer();
+        },
+        error: function(xhr){
+          alert(xhr.responseText);
+        }
+      })
+    }
+  },100);
+}
+window.startTimer();</textarea>
+    <button class="jsRun bg-blue white mb3" data-script="script4">Run</button>
+    
+      <textarea id="script5" class="full-width bg-dark-gray white p2">window.clearTimeout(window.sTimer);</textarea>
+      <button class="jsRun bg-blue white mb3" data-script="script5">Run (to Stop)</button>
+      
+    <h3>Conclusion</h3>  
+      <p>Demo example not covering all the features of Actn.io like hooks, indexing and data_binding. It's a side project and still under development. Many things are missing. However, it built for performance but security disregarded at the moment. If you like it feel free to <a href="https://github.com/hackberry-gh/actn.io">contribute</a> and no need to say, all bug reports welcome.</p>
+    <hr/>
+    
+    <footer><small><a href="http://hackberry.biz">Actn.io is maintained by Hackberry</a></small></footer>
+    
   </body>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="/javascripts/application.js"></script>
 </html>
