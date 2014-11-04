@@ -1,22 +1,22 @@
 @font-face {
     font-family: 'source_sans';
-    src: url('/webfonts/sourcesanspro-regular-webfont.eot');
-    src: url('/webfonts/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/webfonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
-         url('/webfonts/sourcesanspro-regular-webfont.woff') format('woff'),
-         url('/webfonts/sourcesanspro-regular-webfont.ttf') format('truetype'),
-         url('/webfonts/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+    src: url('../webfonts/sourcesanspro-regular-webfont.eot');
+    src: url('../webfonts/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('../webfonts/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('../webfonts/sourcesanspro-regular-webfont.ttf') format('truetype'),
+         url('../webfonts/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'source_sans';
-    src: url('/webfonts/sourcesanspro-semibold-webfont.eot');
-    src: url('/webfonts/sourcesanspro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/webfonts/sourcesanspro-semibold-webfont.woff2') format('woff2'),
-         url('/webfonts/sourcesanspro-semibold-webfont.woff') format('woff'),
-         url('/webfonts/sourcesanspro-semibold-webfont.ttf') format('truetype'),
-         url('/webfonts/sourcesanspro-semibold-webfont.svg#source_sans_prosemibold') format('svg');
+    src: url('../webfonts/sourcesanspro-semibold-webfont.eot');
+    src: url('../webfonts/sourcesanspro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/sourcesanspro-semibold-webfont.woff2') format('woff2'),
+         url('../webfonts/sourcesanspro-semibold-webfont.woff') format('woff'),
+         url('../webfonts/sourcesanspro-semibold-webfont.ttf') format('truetype'),
+         url('../webfonts/sourcesanspro-semibold-webfont.svg#source_sans_prosemibold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
