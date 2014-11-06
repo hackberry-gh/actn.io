@@ -17,3 +17,7 @@
 [submodule "actn-ui"]
       path = api/ui
       url = git://github.com/hackberry-gh/actn-ui.git
+
+[submodule "actn-coreos"]
+      path = platform/core-os
+      url = git://github.com/hackberry-gh/actn-coreos.git      
