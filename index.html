@@ -21,8 +21,6 @@
     <p class="mb4">Actn.io is compound of a few micro services which built on <a href="https://github.com/postrank-labs/goliath" target="_blank">Goliath</a> and <a href="https://code.google.com/p/plv8js/wiki/PLV8" target="_blank">Postgresql PL/V8.</a> Running on CoreOS.</p>
     
     
-    <!----------------------------------------------------------------------------->
-    
     
     <h2>Demo, an Example App</h2>
     
@@ -37,9 +35,7 @@
     </ul>
     
     <p class="bg-yellow p1 rounded red mb4">Actn.io is modular and lets you consume it's API independently. In other words you can use it as a pure backend in your existing website or any other software.</p>
-    
-    <!----------------------------------------------------------------------------->
-    
+        
     
     <h4>1. Client</h4>
     <p>Each client dedicated to only one domain but a single domain can have many clients. It is useful for seperating access control under same domain. 
@@ -106,7 +102,8 @@ actn.post({
   
     <h5>Delete a signature</h5>
     <textarea id="script3" class="full-width bg-dark-gray white p2" style="height:286px" spellcheck="false">actn.delete({
-    path: '/signatures?uuid=...loading...',
+    path: '/signatures',
+    data: {uuid: "...loading..."},
     success: function(data){
       alert(JSON.stringify(data,null,2));
     },
