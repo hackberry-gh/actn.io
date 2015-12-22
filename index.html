@@ -136,9 +136,9 @@ actn.post({
 
     <h4>Live</h4>
     <p>Live is a real time page with two different views. Table and line chart. Table view provides sorting and fast searching through freshly arriving records, as well as inline editing and deleting options. It uses Postgresql Listen/Notify API, websockets and actn-job gem. To see it in action run below script and goto <a href="http://demo.core.actn.io/live" target="_blank">Live</a> page</p>
-    <textarea id="script4" class="full-width bg-dark-gray white p2" style="height:706px" spellcheck="false">// post 10 signature every 100 milisecond      
+    <textarea id="script4" class="full-width bg-dark-gray white p2" style="height:706px" spellcheck="false">// post 10 signature every 100 milisecond  for 5 seconds
 window.startTimer = function(){
-  window.clearTimeout(window.sTimer);    
+  window.clearTimeout(window.sTimer); 
   window.sTimer = window.setTimeout(function() {      
     for(var i=0; i < 10; i++) {      
       var rnd = Math.random() * 10000;
@@ -158,6 +158,7 @@ window.startTimer = function(){
       })
     }
   },100);
+  window.setTimeout(window.clearTimeout(window.sTimer),5000); 
 }
 window.startTimer();</textarea>
     <button class="jsRun bg-blue white mb3" data-script="script4">Run</button>
