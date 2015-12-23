@@ -158,7 +158,7 @@ window.startTimer = function(){
       })
     }
   },100);
-  window.setTimeout(window.clearTimeout(window.sTimer),5000); 
+  window.setTimeout(window.clearTimeout.bind(this, window.sTimer),1000); 
 }
 window.startTimer();</textarea>
     <button class="jsRun bg-blue white mb3" data-script="script4">Run</button>
